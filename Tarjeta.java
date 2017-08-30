@@ -21,7 +21,11 @@ public class Tarjeta
      */
     public void Deposita(float dinero)
     {
-        Saldo= Saldo + dinero;
+        if(Saldo>0)
+        {
+           Saldo= Saldo + dinero;
+        }
+       
     }
     
     /**
